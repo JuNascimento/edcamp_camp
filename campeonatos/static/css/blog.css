@@ -1,0 +1,25 @@
+.titulo h1 {   			
+	color: black;
+	font-weight: 900;
+	font-size: 25px;
+	margin: 10px 70px;
+	padding: 5px 10px;
+}
+table {
+	margin: 0 70px;
+	text-align: right;
+	font-size: 17px;
+}
+
+th {
+	padding: 20px;
+	font-weight: 400;
+	/*text-align: left;*/
+}
+
+.cabecalho th {
+	font-size: 11px;
+	color: #b7b7b7;
+	border-bottom: 1px #b7b7b7 solid;
+	margin-right: 2000px;
+}

@@ -1,0 +1,11 @@
+{% extends 'campeonatos/base.html'%}
+{% block content %}
+	{% for campeonato in campeonato_list %}
+	    <div class="post">
+	    	<h2><a href="{% url 'campeonatos.views.campeonato_detalhe' pk=campeonato.pk %}">{{campeonato.nome}}</a></h2>
+	        <!-- <h2><a href="">{{ post.nome }}</a></h2> -->
+	        <p>{{ campeonato.descricao|linebreaksbr }}</p>
+	    </div>
+	{% endfor %}
+{% endblock %}
+       

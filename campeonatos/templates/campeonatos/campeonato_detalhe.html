@@ -1,0 +1,308 @@
+{% extends 'campeonatos/base.html' %}
+
+{% block content %}
+    <div class="post">
+        <h1>{{ campeonato.nome }}</h1>
+        <p>{{ campeonato.descricao|linebreaksbr }}</p>
+    </div>
+        	<div>
+    		<table>
+    			<thead>
+    				<tr class = "cabecalho">
+	    				<th> CLASSIFICAÇÃO </th>
+	    				<th>P</th>
+	    				<th>J</th>
+	    				<th>V</th>
+	    				<th>E</th>
+	    				<th>D</th>
+	    				<th>GP</th>
+	    				<th>SG</th>
+	    				<th>%</th>
+	    				<th>ÚLT. JOGOS</th>
+	    			</tr>	
+    			</thead>
+<!--     			<tfoot>
+	    			<tr>
+	    				<th>libertadores</th>
+	    				<th>sul americana</th>
+	    				<th>rebaixados</th>
+	    				<th>pré libertadores</th>
+	    				<th>subiu</th>
+	    				<th>caiu</th>
+	    				<th>manteve</th>
+	    				<th>vitoria</th>
+	    				<th>empate</th>
+	    				<th>derrota</th>
+	    			</tr>	
+    			</tfoot> -->
+    			<tbody>
+    				<tr>
+	    				<th class = "time"><font color="0000ff">1</font> América-MG</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+	    				
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="0000ff">1</font> Atlético-MG</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="0000ff">1</font> Atlético-PR</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+	    				
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="0000ff">1</font> Bahia</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+	    				
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="00f2ff">1</font> Botafogo</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+	    				
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="00f2ff">1</font> Ceará</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="008000">1</font> Chapecoense</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="008000">1</font> Cruzeiro</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="008000">1</font> Flamengo</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="008000">1</font> Fluminense</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="008000">1</font> Grêmio</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="00f2ff">1</font> Internacional</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="00f2ff">1</font> Palmeiras</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="00f2ff">1</font> Paraná</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="00f2ff">1</font> Santos</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="ff0000">1</font> São Paulo</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="ff0000">1</font> Sport</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    			</tr>
+	    			<tr>
+	    				<th><font color="ff0000">1</font> Vasco</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+	    			<tr>
+	    				<th><font color="ff0000">1</font> Vitória</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0</th>
+	    				<th>0.0</th>
+	    				<th></th>
+
+	    				
+	    			</tr>
+
+    			</tbody>
+    			
+    		</table>
+    	</div>
+{% endblock %}
