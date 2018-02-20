@@ -1,4 +1,6 @@
-setup:
+setup: install-python create-db migrate
+
+install-python:
 	pip install -r requirements.pip
 
 create-db:
