@@ -1,10 +1,13 @@
 setup:
 	pip install -r requirements.pip
 
+create-db:
+	mysql -uroot -e "create database if not exists edcamp_camp" ;
+
 migrations:
 	python manage.py makemigrations campeonatos
 
-migrate: 
+migrate: migrations
 	python manage.py migrate
 
 superuser:
@@ -12,6 +15,7 @@ superuser:
 
 shell:
 	python manage.py shell
+
 
 run:
 	python manage.py runserver 
