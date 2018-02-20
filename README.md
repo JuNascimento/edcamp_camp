@@ -84,7 +84,13 @@ A saída esperada será algo assim:
 Successfully installed Django-1.9 mysqlclient-1.3.12
 ```
 
-2. Agora vamos rodar o projeto no servidor, digitando o seguinte conteudo na linha de comando:
+2. Depois disso, vamos criar o banco de dados para o projeto:
+
+```
+make create-db
+```
+
+3. Agora vamos rodar o projeto no servidor, digitando o seguinte conteudo na linha de comando:
 
 ```
 make run
